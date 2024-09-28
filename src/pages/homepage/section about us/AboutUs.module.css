@@ -1,5 +1,101 @@
 .wrapper__AboutUs {
-  background-color: red;
-  height: 500px;
-  width: 100vw;
+  width: 80vw;
+  margin: auto;
+  padding-top: 100px;
+}
+
+.row__cards_first {
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+.row__cards_second {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+.row__cards_third {
+  margin-top: 15px;
+  display: flex;
+  gap: 15px;
+  width: 100%;
+}
+
+.card {
+  width: 50%;
+  border-radius: 20px;
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.4s;
+}
+
+.card:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.card:hover span {
+  color: #274472;
+}
+
+.card:hover img {
+  filter: brightness(0) saturate(100%) invert(24%) sepia(10%) saturate(3250%)
+    hue-rotate(178deg) brightness(98%) contrast(95%);
+}
+
+.card__title {
+  display: flex;
+  align-items: center;
+}
+
+.card img {
+  width: 52px;
+}
+
+.card span {
+  line-height: 50px;
+  font-size: 36px;
+  font-weight: 600;
+  color: #fff;
+  margin-left: 10px;
+}
+
+.card h2 {
+  color: #274472;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.regionbox {
+  display: flex;
+  justify-content: start;
+  gap: 30px;
+}
+
+.regionbox h1 {
+  font-size: 28px;
+  line-height: 170%;
+  font-weight: 700;
+  color: #274472;
+}
+
+.card__advantages {
+  width: fit-content;
+  margin: auto;
+  padding-inline: 40px;
+}
+
+.card__advantages h1 {
+  font-weight: 700;
+  color: #274472;
+  font-size: 28px;
+  margin-top: 15px;
+}
+
+.advantages__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 45px;
 }

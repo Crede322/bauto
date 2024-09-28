@@ -1,1 +1,1 @@
-{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts"],"version":"5.6.2"}
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/layout/header/header.tsx","./src/pages/homepage/homepage.tsx","./src/pages/homepage/section about us/aboutus.tsx","./src/pages/homepage/section about us/section any questons/anyquestons.tsx","./src/pages/homepage/section hero/hero.tsx","./src/pages/homepage/section how to order/howtoorder.tsx"],"version":"5.6.2"}
