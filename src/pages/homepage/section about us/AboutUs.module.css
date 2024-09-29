@@ -55,17 +55,18 @@
 }
 
 .card span {
-  line-height: 50px;
-  font-size: 36px;
   font-weight: 600;
   color: #fff;
   margin-left: 10px;
+  font-size: clamp(20px, 3vw, 40px);
+  width: fit-content;
 }
 
 .card h2 {
   color: #274472;
-  font-size: 20px;
   font-weight: 500;
+  font-size: 20px;
+  font-size: clamp(18px, 2.6vw, 30px);
 }
 
 .regionbox {
@@ -75,7 +76,7 @@
 }
 
 .regionbox h1 {
-  font-size: 28px;
+  font-size: clamp(18px, 4vw, 26px);
   line-height: 170%;
   font-weight: 700;
   color: #274472;
@@ -84,18 +85,44 @@
 .card__advantages {
   width: fit-content;
   margin: auto;
-  padding-inline: 40px;
+  padding-inline: 16px;
 }
 
 .card__advantages h1 {
   font-weight: 700;
   color: #274472;
-  font-size: 28px;
-  margin-top: 15px;
+  font-size: clamp(20px, 3vw, 30px);
 }
 
 .advantages__row {
   display: flex;
   justify-content: space-between;
   gap: 45px;
+}
+
+.advantages__row h2 {
+  margin-bottom: 15px;
+}
+/* response */
+
+@media screen and (max-width: 900px) {
+  .row__cards_first {
+    display: block;
+  }
+  .row__cards_second {
+    display: block;
+  }
+  .card {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .advantages__row {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper__AboutUs {
+    padding-top: 40px;
+  }
 }

@@ -4,11 +4,13 @@
   position: relative;
   width: 80vw;
   margin: auto;
-  padding-block: 50px;
+  margin-bottom: 0;
+  padding-top: 40px;
 }
 
 .title__main {
   font-size: 64px;
+  font-size: clamp(30px, 10vw, 64px);
   font-weight: 600;
   color: #fff;
   margin: auto;
@@ -19,18 +21,18 @@
 /* ordercard first */
 
 .ordercard__first h3 {
-  font-size: 3rem;
+  font-size: clamp(30px, 5.5vw, 50px);
   color: #fff;
   margin-left: 13%;
   font-family: 'Roboto Slab', serif;
   text-wrap: nowrap;
   position: relative;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 
 .ordercard__first h3::after {
   content: '01';
-  font-size: 6rem;
+  font-size: clamp(55px, 10vw, 100px);
   bottom: -0.3rem;
   left: -2.8rem;
   position: absolute;
@@ -63,8 +65,16 @@
   margin-left: 10px;
 }
 
+.ordercard__form h5 {
+  color: #074372;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
 .ordercard__form input::placeholder {
   color: #074372;
+  font-size: clamp(14px, 1vw, 16px);
 }
 
 .ordercard__form button {
@@ -99,16 +109,21 @@
 
 /* ordercard second */
 
-.ordercard__second {
+.ordercard__second_wrapper {
   width: fit-content;
-  margin-left: 50%;
+}
+
+.ordercard__second {
+  justify-content: end;
+  display: flex;
+  margin-right: 10%;
   position: relative;
   z-index: 2;
 }
 
 .ordercard__second h3 {
   margin-left: 40px;
-  font-size: 3rem;
+  font-size: clamp(30px, 5.5vw, 50px);
   color: #fff;
   width: fit-content;
   font-family: 'Roboto Slab', serif;
@@ -119,7 +134,7 @@
 
 .ordercard__second h3::after {
   content: '02';
-  font-size: 6rem;
+  font-size: clamp(55px, 10vw, 100px);
   bottom: -0.3rem;
   left: -2.8rem;
   position: absolute;
@@ -145,11 +160,46 @@
 
 .ordercard__next h4 {
   color: #074372;
-  font-size: 36px;
+  /* font-size: 36px; */
+  font-size: clamp(16px, 4vw, 22px);
 }
 
 .ordercard__next img {
-  width: 100px;
-  height: 100px;
+  width: 60px;
+  height: 60px;
   margin-left: 30px;
+}
+
+@media screen and (max-width: 650px) {
+  .ordercard__form {
+    width: 80vw;
+    margin: auto;
+  }
+  .ordercard__second {
+    margin: auto;
+    width: 80vw;
+  }
+  .ordercard__next {
+    width: 80vw;
+  }
+  .ordercard__next {
+    padding: 20px 20px;
+  }
+  .ordercard__next img {
+    width: 60px;
+    height: 60px;
+    margin-left: 30px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .ordercard__form {
+    padding: 20px 20px;
+  }
+  .ordercard__form input::placeholder {
+    font-size: 12px;
+  }
+  .ordercard__first h3 {
+    margin-left: 4%;
+  }
 }

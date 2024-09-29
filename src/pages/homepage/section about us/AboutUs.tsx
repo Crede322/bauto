@@ -25,8 +25,10 @@ const AboutUs = () => {
           </div>
         </div>
         <div className={`${classes.card} ${classes.card__work}`}>
-          <img src={iconWork} alt="card icon" />
-          <span>Как мы работаем?</span>
+          <div className={classes.card__title}>
+            <img src={iconWork} alt="card icon" />
+            <span>Как мы работаем?</span>
+          </div>
           <h2>
             1 Принимаем заказ.
             <br />2 Составляем договор с полной документацией.
@@ -38,8 +40,10 @@ const AboutUs = () => {
       </div>
       <div className={classes.row__cards_second}>
         <div className={`${classes.card} ${classes.card__service}`}>
-          <img src={iconService} alt="card icon" />
-          <span>Сервис под ключ</span>
+          <div className={classes.card__title}>
+            <img src={iconService} alt="card icon" />
+            <span>Сервис под ключ</span>
+          </div>
           <h2>
             По прибытии автомобиль проходит тех. осмотр,
             <br />
@@ -49,21 +53,29 @@ const AboutUs = () => {
           </h2>
         </div>
         <div className={`${classes.card} ${classes.card__approach}`}>
-          <img src={iconApproach} alt="card icon" />
-          <span>Индивидуальный подход</span>
+          <div className={classes.card__title}>
+            <img src={iconApproach} alt="card icon" />
+            <span>
+              Индивидуальный
+              <br />
+              подход
+            </span>
+          </div>
           <h2>
             Для нас важен каждый клиент и мы учитываем
             <br />
             ваши уникальные пожелания и требования,
             <br />
-            чтобы предложить идеальные решения для вас.
+            чтобы предложить идеальные решения.
           </h2>
         </div>
       </div>
       <div className={classes.row__cards_third}>
         <div className={`${classes.card} ${classes.card__advantages}`}>
-          <img src={iconFavorite} alt="card icon" />
-          <span>Наши преимущества</span>
+          <div className={classes.card__title}>
+            <img src={iconFavorite} alt="card icon" />
+            <span>Наши преимущества</span>
+          </div>
           <div className={classes.advantages__row}>
             <div>
               <h1>Широкий круг поиска:</h1>

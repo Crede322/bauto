@@ -9,10 +9,6 @@
   overflow-x: hidden;
 }
 
-body,
-html {
-  /* overflow-x: hidden; */
-}
 /* Сброс стилей */
 
 * {
@@ -127,4 +123,8 @@ label {
 
 legend {
   display: block;
+}
+
+* {
+  -webkit-tap-highlight-color: transparent;
 }

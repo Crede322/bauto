@@ -1,12 +1,12 @@
 import classes from './AnyQuestons.module.css'
-import whatsapp from '../../../../assets/img/anyquestonspage/whatsapp.svg'
-import telegram from '../../../../assets/img/anyquestonspage/telegram.svg'
+import whatsapp from '../../../assets/img/anyquestonspage/whatsapp.svg'
+import telegram from '../../../assets/img/anyquestonspage/telegram.svg'
 
 const AnyQuestons = () => {
   return (
     <div className={classes.wrapper__anyquestons}>
       <div className={classes.title}>
-        <span className={classes.title__main}>Остались ещё вопросы?</span>
+        <span className={classes.title__main}>Ещё остались вопросы?</span>
         <h2>Мы на них ответим</h2>
         <div className={classes.row}>
           <button className={classes.button__social}>
